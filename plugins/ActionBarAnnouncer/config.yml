@@ -1,0 +1,25 @@
+auto_announce: true
+announcements:
+  delay: 1800
+  announces:
+    announcement_vote_reminder:
+      delay_between: 60
+      announces:
+      - '&7Start Voting!'
+      - '&7By Voting, it would help us alot!'
+      - '&7You''ll also get a reward in return!'
+    announcement_donate:
+      delay_between: 60
+      announces:
+      - '&7Go Donate!'
+      - '&7By Donating, you''ll get awesome things!'
+    announcement_shop:
+      delay_between: 60
+      announces:
+      - '&7Make your shop!'
+      - '&7Do you know, you can do /shop?'
+      - '&7Well it''s an awesome thing to sell/buy'
+sounds:
+  start: BLOCK_NOTE_BLOCK_PLING-1.0-2.0
+  announce: ''
+  end: ''
