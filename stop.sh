@@ -1,4 +1,7 @@
 #!/bin/bash
 echo '[Stop] Stopping server..'
-sudo screen -r mcs -X stuff '/stop\n'
-echo '[Shop] Server stopped..'
+for l in $(ps aux | grep "java")
+do
+  kill $l
+done
+doneecho '[Shop] Server stopped..'
