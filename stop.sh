@@ -1,7 +1,7 @@
 #!/bin/bash
 echo '[Stop] Stopping server..'
-for l in $(ps aux | grep "java")
+for l in $(ps aux | grep "java" | grep -v "grep" | tr -s ' ' '-' | cut -d'-' -f 2)
 do
   kill $l
 done
-doneecho '[Shop] Server stopped..'
+echo '[Shop] Server stopped..'
