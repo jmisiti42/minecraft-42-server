@@ -8,6 +8,7 @@ sleep 5
 echo '[Start] Sleeping over'
 
 echo '[Start] Enabling logging'
+chmod 666 /dev/ttyS0
 screen -dm -S logs bash -c 'tail -f logs/latest.log > /dev/ttyS0'
 echo '[Start] Logger enabled'
 echo '[Start] Server started..';
